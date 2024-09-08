@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .question { margin-bottom: 20px; }
+        .form-group { margin-bottom: 10px; }
+        label { display: block; }
+        input[type="radio"] { margin-right: 10px; }
+        button { padding: 10px 15px; background-color: #007bff; color: #fff; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="q1" value="a"> Paris</label>
+                    <label><input type="radio" name="q1" value="b"> London</label>
+                    <label><input type="radio" name="q1" value="c"> Berlin</label>
+                    <label><input type="radio" name="q1" value="d"> Madrid</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. What is 2 + 2?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="q2" value="a"> 3</label>
+                    <label><input type="radio" name="q2" value="b"> 4</label>
+                    <label><input type="radio" name="q2" value="c"> 5</label>
+                    <label><input type="radio" name="q2" value="d"> 6</label>
+                </div>
+            </div>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add quiz submission logic here (e.g., calculate results)
+            alert('Quiz Submitted!');
+        });
+    </script>
+</body>
+</html>

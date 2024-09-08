@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .result { margin-bottom: 20px; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+        button { padding: 10px 15px; background-color: #007bff; color: #fff; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz Results</h2>
+        <div class="result">
+            <p>Your Score: 8/10</p>
+            <p class="correct">1. What is the capital of France? - Paris (Correct)</p>
+            <p class="incorrect">2. What is 2 + 2? - 5 (Incorrect)</p>
+            <!-- Add more results as needed -->
+        </div>
+        <button onclick="window.location.href='quiz.html'">Take Another Quiz</button>
+    </div>
+</body>
+</html>
